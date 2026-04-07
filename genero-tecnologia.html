@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologia | Estante Uni</title>
+    <!-- Imports simplificados por concisão -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter'], playfair: ['Playfair Display'] }, colors: { slate: { 850: '#151e2e', 900: '#0f172a', 950: '#020617' } } } } }</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans antialiased">
+    <header class="fixed w-full top-0 z-50 glass border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-20">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="p-2 bg-indigo-600/20 rounded-lg"><i class="ph ph-books text-3xl text-indigo-400"></i></div>
+                <span class="font-playfair font-bold text-2xl text-slate-100">Estante<span class="text-indigo-400">Uni</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-slate-300 font-medium px-3 py-2 transition-colors">Início</a>
+                <a href="genero-acao.html" class="text-slate-300 font-medium px-3 py-2">Ação</a>
+                <a href="genero-ficcao.html" class="text-slate-300 font-medium px-3 py-2">Ficção</a>
+                <a href="genero-tecnologia.html" class="text-indigo-400 font-medium px-3 py-2 border-b-2 border-indigo-400">Tecnologia</a>
+            </nav>
+        </div></div>
+    </header>
+
+    <main class="pt-20">
+        <section class="py-16 bg-slate-850 border-b border-slate-800 text-center">
+            <div class="max-w-3xl mx-auto px-4">
+                <div class="inline-flex items-center w-16 h-16 justify-center rounded-full bg-emerald-500/10 text-emerald-400 mb-6 border border-emerald-500/20">
+                    <i class="ph ph-code text-4xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">Tecnologia & Dev</h1>
+                <p class="text-lg text-slate-400">Manuais da web, engenharia de software e guias práticos.</p>
+            </div>
+        </section>
+        
+        <section class="py-12 bg-slate-900 min-h-screen">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Livro Tech -->
+                    <div class="book-card bg-slate-800 rounded-xl overflow-hidden border border-slate-700/50 flex flex-col group cursor-pointer">
+                        <div class="relative w-full h-80 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Capa">
+                        </div>
+                        <div class="p-5"><h3 class="text-lg font-bold text-slate-100 font-playfair">Clean Code</h3><p class="text-slate-400 text-sm">Robert C. Martin</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body></html>
